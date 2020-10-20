@@ -1,0 +1,118 @@
+body{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: mintcream;
+}
+.form-area{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    box-shadow: 0 40px 20px rgba(0,0,0,0.5);
+}
+.img-area{
+    width: 100%;
+}
+.right-text h2{
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0 0 30px;
+}
+.right-text a{
+    background: cornflowerblue;
+    color: whitesmoke;
+    display: inline-block;
+    margin-top: 35px;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+div.img-area{
+    height: 300px;
+    width: 100%;
+    /* background: violet; */
+    background: url(pexels-mateusz-sałaciak-4275885.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.left-text{
+    padding: 100px 60px;
+    color: whitesmoke;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.left-text p{
+    text-transform: normal;
+}
+
+.left-text i{
+    font-size: 25px;
+    color: whitesmoke;
+    margin-right: 25px;
+}
+.right-text{
+    margin: 60px 40px;
+}
+.right-text input{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.right-text textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    font-family: sans-serif;
+}
+
+@media screen and (min-width: 768px){
+    div.form-area{
+        flex-direction: row;
+        width: 100%;
+    }
+    div.img-area{
+        height: 420px;
+        min-width: 360px;
+    }
+    div.right-text{
+        margin: 0 60px;
+        max-width: 640px;
+    }
+}
+
+@media screen and (min-width : 1024px){
+    div.form-area{
+        max-width : 1000px;
+    }
+}
+
+@media screen and (max-width : 320px){
+    .img-area{
+        display: none;
+    }
+    .right-text{
+        margin: 30px 25px;
+        text-align: center;
+    }
+    .right-text input{
+        padding: 15px 5px;
+    }
+    .right-text textarea{
+        padding: 15px 5px;
+    }
+}
